@@ -21,8 +21,6 @@ html, body {
 .content {
     display: flex;
     flex-direction: column;
-    /* min-width: 20rem;
-    max-width: 25rem; */
     gap: 1rem;
     margin: 2rem 2rem;
 }
