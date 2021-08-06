@@ -5,6 +5,8 @@ html, body {
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     min-width: 375px;
+    height: 100vh;
+    background-color: hsl(0,0%, 98%);
 }
 
 .main-container {
@@ -12,23 +14,26 @@ html, body {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: 100vh;
     background-color: hsl(0,0%, 98%);
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    min-width: 20rem;
-    max-width: 25rem;
-    gap: 2rem;
+    /* min-width: 20rem;
+    max-width: 25rem; */
+    gap: 1rem;
     margin: 2rem 2rem;
 }
 
 .card {
     background-color: white;
-    width: 100%;
+    min-width: 20rem;
+    max-width: 25rem;
     box-shadow: 1px 10px 20px hsl(229,6%,66%);
     border-radius: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .card-content {
@@ -38,7 +43,7 @@ html, body {
 .middle {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 
@@ -88,10 +93,19 @@ figure {
 }
 
 
-/* @media(min-width: 812px){
+@media(min-width: 812px){
     .content {
         flex-direction: row;
         justify-content: center;
         max-width: 65rem;
     }
-} */
+
+    .main-container {
+        justify-content: center;;
+    }
+
+    .first_last {
+        display: flex;
+        align-items: center;
+    }
+}
